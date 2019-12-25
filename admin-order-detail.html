@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.5">
-    <title>Admin User</title>
+    <title>Admin Category</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/navbar-fixed/">
 
@@ -68,74 +68,79 @@
     <main role="main" class="container">
         <div class="row">
             <div class="col-md-10 mx-auto">
-                <div class="card">
-                    <div class="card-header">
-                        <span>Pengguna</span>
-                        <a href="/admin-users-form.html" class="btn btn-sm btn-secondary">Tambah</a>
-
-                        <div class="float-right">
-                            <form action="#">
+                <div class="row mb-3">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                Detail Order #012345678
+                                <div class="float-right">
+                                    <span class="badge badge-pill badge-info">Menunggu Pembayaran</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p>Nama : Luthfi Azizi</p>
+                                <p>Telepon : 085797900009</p>
+                                <p>Alamat : Jl. Kembar Indah No 29</p>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Produk</th>
+                                            <th class="text-center">Harga</th>
+                                            <th class="text-center">Jumlah</th>
+                                            <th class="text-center">Subtotal</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p><img src="https://placehold.co/50x50" alt=""><strong>Produk
+                                                        Title</strong>
+                                                </p>
+                                            </td>
+                                            <td class="text-center">Rp.100.000,-</td>
+                                            <td class="text-center">1</td>
+                                            <td class="text-center">Rp.100.000,-</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="3"><strong>Total</strong></td>
+                                            <td class="text-center"><strong>Rp. 100.000,-</strong></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="card-footer">
                                 <div class="input-group">
-                                    <input type="text" class="form-control form-control-sm text-center" placeholder="Cari">
+                                    <select name="" id="" class="form-control">
+                                        <option value="waiting">Menuggu Pembayaran</option>
+                                        <option value="paid">Dibayar</option>
+                                        <option value="deliverd">Dikirim</option>
+                                        <option value="cancel">Batal</option>
+                                    </select>
                                     <div class="input-group-append">
-                                        <button type="submit" class="btn btn-secondary btn-sm">
-                                            <i class="fas fa-search"></i>
-                                        </button>
-                                        <a href="#" class="btn btn-secondary btn-sm">
-                                            <i class="fas fa-eraser"></i>
-                                        </a>
+                                        <button class="btn btn-primary" type="submit">Simpan</button>
                                     </div>
                                 </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
-                    <div class="card-body">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">Pengguna</th>
-                                    <th scope="col">E-mail</th>
-                                    <th scope="col">Role</th>
-                                    <th scope="col">Status</th>
-                                    <th scope="col"></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>
-                                        <p>
-                                            <img src="https://placehold.co/70x70" alt=""> Admin
-                                        </p>
-                                    </td>
-                                    <td>admin@gmail.com</td>
-                                    <td>Admin</td>
-                                    <td>Aktif</td>
-                                    <td>
-                                        <form action="#">
-                                            <a href="#">
-                                                <button class="btn btn-sm">
-                                                    <i class="fas fa-edit text-info"></i>
-                                                </button>
-                                            </a>
-                                            <button class="btn btn-sm" type="submit" onclick="return confirm('are you sure?') ">
-                                                <i class="fas fa-trash text-danger"></i>
-                                            </button>
-                                        </form>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <nav aria-label="Page navigation example">
-                            <ul class="pagination">
-                                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                            </ul>
-                        </nav>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-header">
+                                Bukti Transfer
+                            </div>
+                            <div class="card-body">
+                                <p>Dari Rekening: 012345678</p>
+                                <p>Atas Nama: Luthfi Azizi</p>
+                                <p>Nominal: Rp100.000,-</p>
+                                <p>Catatan: - </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://placehold.co/150x200" alt="">
                     </div>
                 </div>
             </div>

@@ -70,8 +70,8 @@
             <div class="col-md-10 mx-auto">
                 <div class="card">
                     <div class="card-header">
-                        <span>Pengguna</span>
-                        <a href="/admin-users-form.html" class="btn btn-sm btn-secondary">Tambah</a>
+                        <span>Produk</span>
+                        <a href="/admin-product-form.html" class="btn btn-sm btn-secondary">Tambah</a>
 
                         <div class="float-right">
                             <form action="#">
@@ -94,10 +94,10 @@
                             <thead>
                                 <tr>
                                     <th scope="col">#</th>
-                                    <th scope="col">Pengguna</th>
-                                    <th scope="col">E-mail</th>
-                                    <th scope="col">Role</th>
-                                    <th scope="col">Status</th>
+                                    <th scope="col">Produk</th>
+                                    <th scope="col">Kategori</th>
+                                    <th scope="col">Harga</th>
+                                    <th scope="col">Stock</th>
                                     <th scope="col"></th>
                                 </tr>
                             </thead>
@@ -106,23 +106,21 @@
                                     <td>1</td>
                                     <td>
                                         <p>
-                                            <img src="https://placehold.co/70x70" alt=""> Admin
+                                            <img src="https://placehold.co/70x70" alt=""> Laptops core i9 2019
                                         </p>
                                     </td>
-                                    <td>admin@gmail.com</td>
-                                    <td>Admin</td>
-                                    <td>Aktif</td>
+                                    <td><span class="badge badge-primary"><i class="fas fa-tags"></i>Laptops</span></td>
+                                    <td>Rp13.000.000</td>
+                                    <td>Tersedia</td>
                                     <td>
-                                        <form action="#">
-                                            <a href="#">
-                                                <button class="btn btn-sm">
-                                                    <i class="fas fa-edit text-info"></i>
-                                                </button>
-                                            </a>
-                                            <button class="btn btn-sm" type="submit" onclick="return confirm('are you sure?') ">
-                                                <i class="fas fa-trash text-danger"></i>
+                                        <a href="#">
+                                            <button class="btn btn-sm">
+                                                <i class="fas fa-edit text-info"></i>
                                             </button>
-                                        </form>
+                                        </a>
+                                        <button class="btn btn-sm" type="submit" onclick="return confirm('are you sure?') ">
+                                            <i class="fas fa-trash text-danger"></i>
+                                        </button>
                                     </td>
                                 </tr>
                             </tbody>
